@@ -32,7 +32,8 @@
     "transpile": "tsc",
     "minimize": "minimize-js dist",
     "regenerate": "npm run download && npm run code-generator && npm run transpile",
-    "prepublishOnly": "npm install && npm run clean && npm install && npm run regenerate"
+    "prepublishOnly": "npm install && npm run clean && npm install && npm run regenerate",
+    "prepare": "npm run regenerate"
   },
   "dependencies": {
     "ts-node": "^10.9.1",
